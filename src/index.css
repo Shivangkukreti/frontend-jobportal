@@ -1,0 +1,54 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+    font-family: outfit;
+}
+
+
+.job-description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  max-width: 800px;
+  
+  padding: 20px;
+}
+
+.job-description  p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.job-description  h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 4px;
+  font-weight: 400;
+}
+
+.job-description  ol {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.job-description  li {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  list-style-type:n;
+}
+
+input::placeholder {
+  color: #aaa; /* Light gray */
+  opacity: 1;  /* Ensure visibility */
+}
+
+input{
+  outline: none;
+}
