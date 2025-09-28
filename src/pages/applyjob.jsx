@@ -27,6 +27,8 @@ async function applyjob() {
         nav('/application')
     }
     let token=await getToken()
+    
+    
     let {data}=await axios.post(api+'/api/user/apply',{jobid:jobdata._id},{headers:{Authorization:`Bearer ${token}`}})
      if (data.success) {
         toast.success(data.message)
@@ -47,6 +49,8 @@ async function getthatjob() {
     try {
        let {data}=await axios.get(`${api}/api/jobs/${id}`)
     if (data.success) {
+        console.log(data.any);
+        
         setdata(data.any)
     }else{
         toast.error(data.message)

@@ -19,7 +19,7 @@ function handleall(event) {
   }));
 }
 
-
+    
 useEffect(()=>{
     if (!quillref.current && editorref.current) {
         quillref.current=new Quill(editorref.current,{theme:'snow'})
